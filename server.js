@@ -1,9 +1,9 @@
+require('dotenv').config();
 const express = require('express');
 const connectDB = require('./utils/dbconfig');
 const userRouter = require('./routes/userRoutes');
 const notesRouter = require('./routes/noteRoutes');
 const bodyParser = require('body-parser');
-require('dotenv').config();
 const cors = require('cors');
 const morgan = require('morgan');
 const { notFound, errorHandler } = require('./middlewares/error-middleware');
